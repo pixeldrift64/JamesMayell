@@ -148,7 +148,7 @@
     $(function() {
 
         function updateSpotify() {
-            $.post("http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=pixeldrift64&api_key=1f633977acf0e2d0630ec11dbc350d3e&format=json")
+            $.post("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=pixeldrift64&api_key=1f633977acf0e2d0630ec11dbc350d3e&format=json")
                 .done(function(json) {
 
                     var name = json.recenttracks.track[0].name;
